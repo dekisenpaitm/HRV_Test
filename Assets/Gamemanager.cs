@@ -66,11 +66,11 @@ public class Gamemanager : MonoBehaviour
                 Soundmanager.Instance.StopBackgroundAudio();
                 break;
             case GameState.Easy:
-                Spawnmanager.Instance.ButtonSpawnTime = 3; //20 buttons per game -> 10 points goal
+                Spawnmanager.Instance.ButtonSpawnTime = 3; //26~ buttons per game -> 20 points goal
                 Spawnmanager.Instance.StartSpawning();
                 break;
             case GameState.Hard:
-                Spawnmanager.Instance.ButtonSpawnTime = 0.75f; // 60 buttons per game -> 30 point goal
+                Spawnmanager.Instance.ButtonSpawnTime = 0.75f; // 100 buttons per game -> 60 point goal
                 Spawnmanager.Instance.StartSpawning();
                 break;
         }
@@ -83,7 +83,7 @@ public class Gamemanager : MonoBehaviour
             "Gamerules", 
             "Please make sure the watch is well positioned.", 
             "During this game buttons will randomly appear. Your score and time will be shown at the top.", 
-            "Your goal: 10 points.", 
+            "Your goal: 20 points.", 
             () => StartEasyGame());
     }
 
@@ -93,7 +93,7 @@ public class Gamemanager : MonoBehaviour
             "Gamerules",
             "Please make sure the watch is well positioned.", 
             "During this game buttons will randomly appear. Your score and time will be shown at the top.", 
-            "Your goal: 30 points.", 
+            "Your goal: 60 points.", 
             () => StartHardGame());
     }
 
