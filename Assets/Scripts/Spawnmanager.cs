@@ -104,20 +104,20 @@ public class Spawnmanager : MonoBehaviour
         if (Gamemanager.Instance.EasyDone && !Gamemanager.Instance.HardDone)
         {
             UIManager.Instance.OpenTestModalUI("Thank you!",
-                "Please note your Heartrate on the paper you recieved prior to the test @Test A.",
+                "Please note your HRV on the paper you recieved prior to the test @Test A.",
                 "The upcoming game follows the same rules: Click buttons and score points.",
                 "Your goal: 60 points.", () => Gamemanager.Instance.StartHardGame());
         } else if (!Gamemanager.Instance.EasyDone && Gamemanager.Instance.HardDone)
         {
             UIManager.Instance.OpenTestModalUI("Thank you!",
-                "Please note your Heartrate on the paper you recieved prior to the test @Test B.",
+                "Please note your HRV on the paper you recieved prior to the test @Test B.",
                 "The upcoming game follows the same rules: Click buttons and score points.",
                 "Your goal: 20 points.", () => Gamemanager.Instance.StartEasyGame());
         }
         else
         {
             UIManager.Instance.OpenTestModalUI("Thank you!",
-                "Please note your Heartrate on the paper you recieved prior to the test for the missing test (either A or B).",
+                "Please note your HRV on the paper you recieved prior to the test for the missing test (either A or B).",
                 "You've finished the pre-test!",
                 "I will explain you in a second how we'll proceed", () => {});
         }
