@@ -2020,7 +2020,7 @@ MonoBehaviour:
   borderLimit: 100
   buttonPrefab: {fileID: 957949772526157086, guid: 2f5fd86de6c791f4bb76e714c51cf16c, type: 3}
   currentButton: {fileID: 0}
-  gameTime: 80
+  gameTime: 120
   buttonSpawnTime: 0
   isGameRunning: 0
 --- !u!4 &1056491598
